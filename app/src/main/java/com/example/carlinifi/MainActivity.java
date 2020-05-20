@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(s!="") {
                     try {
-                        Toast.makeText(getApplicationContext(), "Loggato con successo!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
                         mappa.setVisibility(View.VISIBLE);
                         login.setVisibility(View.INVISIBLE);
                         //loadIntoTextview(s);
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(), "errore", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Non sei ancora registrato!", Toast.LENGTH_SHORT).show();
                 }
             }
 
